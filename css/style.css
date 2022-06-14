@@ -7,13 +7,12 @@
   --team-section-color: #f5f4fa;
   --contacts-text-color: rgba(255, 255, 255, 0.6);
   --additional-text-color: #ffffff;
-  --footer-contacts: color: rgba(255, 255, 255, 0.6);
 }
 
 body {
   background-color: var(--background-color);
   color: var(--primary-text-color);
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   letter-spacing: 0.03em;
 }
@@ -23,7 +22,7 @@ body {
 }
 
 .page-logo {
-  font-family: "Raleway";
+  font-family: 'Raleway';
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
@@ -58,10 +57,17 @@ ul {
   text-decoration: none;
 }
 
+.link-data {
+  color: var(--primary-text-color);
+  text-decoration: none;
+}
+
 .nav-menu .link:hover,
 .nav-menu .link:focus,
 .contact-menu .link:hover,
-.contact-menu .link:focus {
+.contact-menu .link:focus,
+.link-data:hover,
+.link-data:focus {
   color: var(--accent-color);
 }
 
@@ -77,10 +83,10 @@ ul {
 .hero-title {
   color: var(--background-color);
   font-weight: 900;
-font-size: 44px;
-line-height: 1.36;
-letter-spacing: 0.06em;
-text-transform: uppercase;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
 .hero-button {
@@ -96,7 +102,7 @@ text-transform: uppercase;
 
 .hero-button:hover,
 .hero-button:focus {
-  background-color: #277CC8;
+  background-color: #188ce8;
 }
 
 /* section */
@@ -111,16 +117,17 @@ text-transform: uppercase;
 
 .features-text {
   font-size: 14px;
-line-height: 1.71;
-color: var(--primary-text-color);
+  line-height: 1.71;
+  color: var(--primary-text-color);
 }
 
-.work-title, .team-title {
+.work-title,
+.team-title {
   font-weight: 700;
-font-size: 36px;
-line-height: 1.33;
-color: var(--title-text-color);
-text-align: center;
+  font-size: 36px;
+  line-height: 1.33;
+  color: var(--title-text-color);
+  text-align: center;
 }
 .our-team {
   background-color: var(--team-section-color);
@@ -130,14 +137,14 @@ text-align: center;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
-  color:  var(--title-text-color);
+  color: var(--title-text-color);
   text-align: center;
 }
 
 .team-text {
   font-size: 16px;
   line-height: 1.19;
-  color:  var(--primary-text-color);
+  color: var(--primary-text-color);
   text-align: center;
 }
 
@@ -145,34 +152,34 @@ text-align: center;
   background-color: var(--hero-section-color);
 }
 
-.adress {
+.street {
+  font-style: normal;
   color: var(--additional-text-color);
   font-size: 14px;
   line-height: 1.7;
 }
 
 .contact-footer {
+  font-style: normal;
   font-size: 14px;
   line-height: 1.7;
-  color: var(--footer-contacts);
+  color: var(--contacts-text-color);
   text-decoration: none;
 }
 
 /* Portfolio*/
 
-
-
 .filter-menu {
   font-family: inherit;
   font-weight: 500;
   line-height: 1.62;
-  cursor: pointer;
 }
 
 .filter-item {
   color: var(--title-text-color);
   background-color: var(--team-section-color);
   border-style: none;
+  cursor: pointer;
 }
 
 .filter-item:hover,
