@@ -166,13 +166,13 @@ text-align: center;
   font-family: inherit;
   font-weight: 500;
   line-height: 1.62;
-  cursor: pointer;
 }
 
 .filter-item {
   color: var(--title-text-color);
   background-color: var(--team-section-color);
   border-style: none;
+  cursor: pointer;
 }
 
 .filter-item:hover,
